@@ -23,6 +23,14 @@
 				color:#D2AB67;
 			}
 
+			ul{
+				padding-left: 0;
+			}
+
+			li{
+				list-style: none;
+			}
+
 			#saibamais:hover{
 				transition: .5s;
 				filter: opacity(50%);
@@ -59,6 +67,54 @@
 				padding: 20px 0px;
 			}
 			
+			#rodape{
+				padding: 80px 50px 20px 50px;
+				gap: 50px;
+				background-color: #131313;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				flex-wrap: wrap;
+			}
+
+			#mapa iframe{
+				border-radius: 25px;
+				padding-top: 10px;
+			}
+
+			#rodape li{
+				font-size: .7em;
+				margin-left: 0;
+			}
+
+			#mpsite li{
+				line-height: 3.3em;
+			}
+
+			#mpsite li:hover{
+				color: #D2ab67;
+			}
+
+			#atendi img#logo{
+				width: 100px;
+				padding-bottom: 40px;
+			}
+
+			#mapa h1{
+				font-size: 1em;
+			}
+
+			#copy{
+				background-color: #131313;
+				text-align: center;
+				font-size: .6em;
+				padding: 5px;
+			}
+
+			i{
+				margin-right: 5px;
+			}
+
 		</style>
 	</head>
 	<body class="landing is-preload">
@@ -189,12 +245,64 @@
 						<div id="douradao"></div>
 					</section>
 
-				
+					<footer id="rodape">
+						
+						<section id="atendi">
+							<img src="images/ícone.png" alt="" id="logo">
 
-				
+							<h1>Atendimento</h1>
+							<ul>
+								<li><i class="fa-solid fa-phone" style="color: #ffffff;"></i> (00) 0000-0000</li>
+								<li><i class="fa-solid fa-phone" style="color: #ffffff;"></i> (00) 0000-0000</li>
+								<li><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i> (00) 00000-0000</li>
+								<li><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> contato@robson.com</li>
+								<li><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> R. Nossa Sra. de Fátima, 1704</li>
+							</ul>
+							
+						</section>
+					
+						<section id="mpsite">
+							
+							<h1>Mapa do site</h1>
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Área de Atuação</a></li>
+								<li><a href="#">Sobre nós</a></li>
+								<li><a href="#">Contato</a></li>
+								<li><a href="#">Blog</a></li>
+							</ul>
 
-			
-					<footer style="height: 150px;" id="footer">
+						</section>
+						
+						
+
+						<section id="mpsite">
+							
+							<h1>Áreas de <br> atuação</h1>
+							<ul>
+								<li><a href="#">Direito Previdenciário</a></li>
+								<li><a href="#">Direito do Traballho</a></li>
+								<li><a href="#">Direito Civil</a></li>
+								<li><a href="#">Direito Empresarial</a></li>
+								<li><a href="#">Direito Tributario</a></li>
+							</ul>
+
+						</section>
+
+						
+
+						<section id="mapa">
+							<h1>Venha nos conhecer</h1>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.7173743551216!2d-49.82897272536889!3d-23.68606306618412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c1e8c2f92e99df%3A0x268c0bf80025f4dc!2sR.%20Nossa%20Sra.%20de%20F%C3%A1tima%2C%201704%2C%20Siqueira%20Campos%20-%20PR%2C%2084940-000!5e0!3m2!1spt-PT!2sbr!4v1707838414340!5m2!1spt-PT!2sbr" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</section>
+						
+					</footer>
+
+					<div id="copy">
+						<p>Rorbson Bergamaschi © - 2024 - Todos os Direitos reservados</p>
+					</div>
+
+					<footer style="height: 100px;" id="footer">
 						<ul class="icons">
 							<li><a href="#" class="icon brands fa-whatsapp"><span class="label">whatsapp</span></a></li>
 							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -214,6 +322,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://kit.fontawesome.com/821de4c13f.js" crossorigin="anonymous"></script>
 
 	</body>
 </html>
