@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="pt-BR">
 	<head>
 		<title>ROBSON BERGAMASCHI</title>
 		<meta charset="utf-8" />
@@ -16,6 +16,49 @@
 			}#pao{
 				background-color:#03101d ;
 			}
+			#saibamais{
+				padding: 7px;
+				border: 1px solid #D2AB67;
+				border-radius: 40px;
+				color:#D2AB67;
+			}
+
+			#saibamais:hover{
+				transition: .5s;
+				filter: opacity(50%);
+			}
+
+			#atuacao{
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				gap: 30px;
+				padding: 10px;
+			}
+
+			#cartao{
+				width: 200px;
+				height: 250px;
+				padding: 10px;
+				background-color: #03101d;
+				border-radius: 10px 0px;
+			}
+
+			#cartao:hover{
+				transition: .5s;
+				transform: scale(1.05);
+			}
+
+			#cartao h1{
+				color: #D2AB67;
+				letter-spacing: 0;
+			}
+
+			#cartao img{
+				width: 80px;
+				padding: 20px 0px;
+			}
+			
 		</style>
 	</head>
 	<body class="landing is-preload">
@@ -36,16 +79,28 @@
 
 
 
-				<nav style="background-color: #03101d; text-align: center; "> <a href="#">Home</a> &nbsp; &nbsp; &nbsp;
-					<a href="#">Áreas de Atuação</a> &nbsp; &nbsp; &nbsp;
-					<a href="#">Sobre Nós</a> &nbsp; &nbsp; &nbsp;
-					<a href="#">Contato</a> &nbsp; &nbsp; &nbsp;
-					<a href="#">Blog</a> &nbsp; &nbsp; &nbsp;
-
+					<header id="header">
+						<h1><a href="index.html">ROBSON BERGAMASCHI</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="#">Áreas de Atuação</a></li>
+											<li><a href="#">Sobre Nós</a></li>
+											<li><a href="#">Blog</a></li>
+											<li><a href="#">Contato</a></li>
+											<li></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+					<div id="douradao"></div>
 				
-				</nav>
-				<div id="douradao"></div>
-
 
 					<section id="one" class="wrapper style1 special">
 						<div class="inner">
@@ -53,7 +108,7 @@
 								<img src="images/LOGO fundo transparente.png" width="320px">
 						</div>
 					</section>
-					<div id="douradao"></div>
+					
 						
 					<center>
 						<div id="pao">
@@ -62,12 +117,45 @@
 					<h1 style="color: #D2AB67;">Áreas de Atuação 
 					</h1><br />
 
-					<nav>
-						<a href=""><img src="images/DIREITO DO TRABALHOOOOO.png" width="220px"></a>
-							<a href=""><img src="images/DIREITO DO TRABALHOOOOO.png" width="220px"></a>
-							<a href=""><img src="images/DIREITO DO TRABALHOOOOO.png" width="220px"></a>
-							<a href=""><img src="images/DIREITO DO TRABALHOOOOO.png" width="220px"></a>
-							<a href=""><img src="images/DIREITO DO TRABALHOOOOO.png" width="220px"></a>
+					
+						
+						<nav id="atuacao">
+							<section id="cartao">
+								<img src="images/direito-previdenciario-icon-150x150.png.png" alt="">
+								<h1>Direito Previdenciário
+								</h1>
+								<a href="previdenciario.html" id="saibamais">Saiba mais</a>
+							</section>
+
+							<section id="cartao">
+								<img src="images/direito-do-trabalho-icon.png" alt="">
+								<h1>Direito do Traballho
+								</h1>
+								<a href="trabalhista.html" id="saibamais">Saiba mais</a>
+							</section>
+
+							<section id="cartao">
+								<img src="images/direito-civil-icon-150x150.png.png" alt="">
+								<h1>Direito <br> Civil
+								</h1>
+								<a href="civil.html" id="saibamais">Saiba mais</a>
+							</section>
+
+							<section id="cartao">
+								<img src="images/leis-corporativas-1.png" alt="">
+								<h1>Direito Empresarial
+								</h1>
+								<a href="empresarial.html" id="saibamais">Saiba mais</a>
+							</section>
+
+							<section id="cartao">
+								<img src="images/juridico-1-150x150.png.png" alt="">
+								<h1>Direito Tributário
+								</h1>
+								<a href="tributario.html" id="saibamais">Saiba mais</a>
+							</section>
+					</nav>
+				</div>
 
 					</nav>
 				</div>
