@@ -1509,6 +1509,14 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
+			div #nossoh{
+				justify-content: center;
+			}
+
+			#nossoh img{
+				width: 50vh;
+			}
+
 			.row {
 				display: flex;
 				flex-wrap: wrap;
