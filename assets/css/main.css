@@ -1517,6 +1517,10 @@ input, select, textarea {
 				width: 50vh;
 			}
 
+			#conteudo{
+				width: 90%;
+			}
+
 			.row {
 				display: flex;
 				flex-wrap: wrap;
