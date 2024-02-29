@@ -9,6 +9,7 @@
 		
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
+			
 			#douradao{
 				width: 100%;
 				height: 6px;
@@ -43,10 +44,15 @@
 				justify-content: center;
 				flex-wrap: wrap;
 				gap: 30px;
-				padding: 10px;
+			}
+
+			#areaDA{
+				background-color: #010c18;
+				padding: 50px;
 			}
 
 			#cartao{
+				text-align: center;
 				width: 200px;
 				height: 250px;
 				padding: 10px;
@@ -127,25 +133,7 @@
 			i{
 				margin-right: 5px;
 			}
-
-			div #nossoh{
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				gap: 10%;
-				flex-wrap: wrap;
-				background-color:#03101d;
-				padding: 40px 0px 40px 0;
-			}
-
-			#nossoh #carrossel{
-				display: inline;
-			}
-
-			#nossoh img{
-				width: 65vh;
-			}
-
+ 
 			#conteudo{
 				display: inline;
 				width: 500px;
@@ -159,6 +147,87 @@
 				padding: 5px;
 			}
 
+			h3{
+				font-size: 1em;
+			}
+
+			h3 #orange{
+				color: #D2ab67;
+			}
+
+			#sobre{
+				display: flex;
+				justify-content: center;
+				gap: 70px;
+				align-items: center; !important
+				padding: 20px 0;
+				border-width: 5px 0; 
+				border-style: solid;
+				border-color: #D2ab67;
+				background-color: #03101d; 
+				flex-wrap: wrap; !important
+			}
+
+			#compromisso{
+				display: flex;
+				justify-content: center;
+				gap: 10px;
+				align-items: center; !important
+				border-width: 5px 0; 
+				border-style: solid;
+				border-color: #1a1a1a;
+				background-color: #111111;
+				flex-wrap: wrap; !important
+			}
+
+			#conteudoCompromisso{
+				padding: 100px 50px 0px 50px;
+				max-width: 600px;
+				width: 100%;
+			}
+
+			#conteudoCompromisso p{
+				text-align: start;
+			}
+
+			#conteudoSobre{
+				max-width: 400px;
+				width: 100%;
+				display: inline-block;
+				text-align: start;
+			}
+
+			#luz{
+				max-width: 450px;
+				width: 100%;
+				box-shadow: -30px 16px #D2ab67;
+				
+			}
+
+			#conheca{
+				font-size: 1.5em;
+			}
+
+			#Comp{
+				font-size: 1.5em;
+			}
+
+			.pessoas{
+				background-color: #D2ab67;
+				color: #03101d;
+				font-weight: bold;
+			}
+
+			#estatua{
+				width: 100%;
+			}
+
+			#areaT{
+				color: #D2AB67;
+				padding: 30px;
+				font-size: 2em;
+				text-align: center;
+			}
 		</style>
 	</head>
 	<body class="landing is-preload">
@@ -173,11 +242,9 @@
 					<section id="banner">
 					</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
 						<div class="inner">
-							<h2>ROBSON BERGAMASCHI</h2>
+							<h2>Bergamaschi Advogados</h2>
 						</div>
 					</section>
-
-
 
 					<header id="header">
 						<h1><a href="index.html">ROBSON BERGAMASCHI</a></h1>
@@ -199,71 +266,43 @@
 							</ul>
 						</nav>
 					</header>
-					<div id="douradao"></div>
-				
 
-					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<header class="major">
-								<img src="images/LOGO fundo transparente.png" width="320px">
-						</div>
+
+					<section id="sobre" class="wrapper style1 special">
+
+							<article>
+								<img src="images/WhatsApp-Image-2024-02-12-at-11.20.png" alt="" id="luz">
+							</article>
+
+							<article id="conteudoSobre">
+
+								<h1 id="conheca">Conheça a gente</h1>
+
+								<p>
+									Fundado em 1977 pelo saudoso <span class="pessoas">Dr. Odemil Pineda Bergamaschi</span> e sua esposa, <span class="pessoas">Dalva Rodrigues de Paula Bergamaschi</span>. <br>
+									E ao longo de décadas, tem sido sinônimo de excelência jurídica e compromisso sólido com seus clientes</p>
+
+								<a href="conheca.html">Saiba Mais</a>
+							</article>
+
 					</section>
-			<center>
-				<section id="fundoslide">
-				<div id="sll" >
-				
-					<h2 style="color: #D2AB67;" class="w3-center">conheça nossas instalações</h2>
+
+					<section id="areaDA">
 					
-					<img class="slide" src="images/WhatsApp Image 2024-02-12 at 11.19.41.jpeg" style="width:100%" height="500px">
-					<img class="slide" src="images/WhatsApp Image 2024-02-12 at 11.20.35.jpeg" style="width:100%" height="500px">
-					<img class="slide" src="images/WhatsApp Image 2024-02-12 at 11.20.23.jpeg" style="width:100%" height="500px">
-					
-				</div>				
-			</section>
-			</center>					
+					<h1 id="areaT">Áreas de Atuação </h1>
 
-
-
-					<script>
-						var index = 0;
-						carousel();
-						function carousel() {
-						var i;
-						var x = document.getElementsByClassName("slide");
-						for (i = 0; i < x.length; i++) {
-						x[i].style.display = "none";
-						}
-						index++;
-						if (index > x.length) { index = 1 }
-						x[index - 1].style.display = "block";
-						setTimeout(carousel, 2000); //Imagem é trocada a cada 2 segundos
-						}
-						</script>
-						
-<center>
-
-
-
-						<div id="pao">
-						</br>
-
-						
-					<h1 style="color: #D2AB67;">Áreas de Atuação 
-					</h1><br />
-
-					
-						
 						<nav id="atuacao">
+							
 							<section id="cartao">
 								<img src="images/direito-previdenciario-icon-150x150.png.png" alt="">
-								<h1>Direito Previdenciário
+								<h1>Direito <br> Previdenciário
 								</h1>
 								<a href="previdenciario.html" id="saibamais">Saiba mais</a>
 							</section>
 
 							<section id="cartao">
 								<img src="images/direito-do-trabalho-icon.png" alt="">
-								<h1>Direito do Traballho
+								<h1>Direito do <br> Traballho
 								</h1>
 								<a href="trabalhista.html" id="saibamais">Saiba mais</a>
 							</section>
@@ -277,7 +316,7 @@
 
 							<section id="cartao">
 								<img src="images/leis-corporativas-1.png" alt="">
-								<h1>Direito Empresarial
+								<h1>Direito <br> Empresarial
 								</h1>
 								<a href="empresarial.html" id="saibamais">Saiba mais</a>
 							</section>
@@ -292,6 +331,9 @@
 				</div>
 
 					</nav>
+
+				</section>
+
 				</div>
 			</center>
 				<!-- Two -->
@@ -323,8 +365,24 @@
 						<div id="douradao"></div>
 					</section>
 
-				
+					<section id="compromisso">
 
+						<article id="conteudoCompromisso">
+
+							<h1 id="Comp">Nosso Compromisso</h1>
+
+							<p>
+								<span class="pessoas">Tradição e Solidez:</span> Ao longo de décadas, construímos uma reputação sólida baseada em valores fundamentais de integridade e dedicação. <br> <br>
+								<span class="pessoas">Inovação para Melhor Atendimento:</span> Sob a liderança de Robson Luis de Paula Bergamaschi, implementamos uma nova estrutura para oferecer serviços ainda mais eficientes e adaptados às necessidades de nossos clientes.
+							</p>
+
+						</article>
+
+						<article>
+							<img src="images/estatua.png" alt="" id="estatua">
+						</article>
+
+				</section>
 				
 					<footer id="rodape">
 						
