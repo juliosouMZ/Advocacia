@@ -1,23 +1,16 @@
 <!DOCTYPE HTML>
-
 <html lang="pt-BR">
 	<head>
 		<title>ROBSON BERGAMASCHI</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			
-			#douradao{
-				width: 100%;
-				height: 6px;
-				background-color:#D2AB67 ;
-
-			}#pao{
-				background-color:#03101d ;
-			}
+		<link rel="stylesheet" href="./css/reset.min.css">
+		<link rel="stylesheet" href="./css/default.css">
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/animation.css">
+        <style>
 
 			li{
 				list-style: none;
@@ -26,66 +19,32 @@
 			ul{
 				padding-left: 0;
 			}
-			
-			#saibamais{
-				padding: 7px;
-				border: 1px solid #D2AB67;
-				border-radius: 40px;
-				color:#D2AB67;
-			}
 
-			#saibamais:hover{
-				transition: .5s;
-				filter: opacity(50%);
-			}
+            #cont{
+                display: flex;
+                flex-wrap: wrap-reverse;
+                gap: 30px;
+                justify-content: space-evenly;
+				align-items: center;
+                padding: 1em;
+            }
 
-			#atuacao{
-				display: flex;
-				justify-content: center;
-				flex-wrap: wrap;
-				gap: 30px;
-			}
+            #cont #texto{
+                width: 500px;
+            }
 
-			#areaDA{
-				background-color: #010c18;
-				padding: 50px;
-			}
+            #voltar{
+                background-color: #D2ab67;
+                padding: 10px 40px;
+                color: white;
+                text-decoration: none;
+                border-radius: 50px;
+            }
 
-			#cartao{
-				text-align: center;
-				width: 200px;
-				height: 250px;
-				padding: 10px;
-				background-color: #03101d;
-				border-radius: 10px 0px;
-			}
+            #voltar:hover{
+                filter: opacity(70%);
+            }
 
-			#cartao:hover{
-				transition: .5s;
-				transform: scale(1.05);
-			}
-
-			#cartao h1{
-				color: #D2AB67;
-				letter-spacing: 0;
-			}
-
-			#cartao img{
-				width: 80px;
-				padding: 20px 0px;
-			}
-			#sll{
-			-moz-order: 1;
-			-webkit-order: 1;
-			-ms-order: 1;
-			order: 1;
-			border-radius: 0;
-			width: 90%;
-			
-			}
-			#fundoslide{
-				background-color: #03101d;
-			}
 			#rodape{
 				padding: 80px 50px 20px 50px;
 				gap: 50px;
@@ -133,119 +92,102 @@
 			i{
 				margin-right: 5px;
 			}
- 
-			#conteudo{
-				display: inline;
-				width: 500px;
-				text-align: center;
-				padding: 30px;
-			}
-
-			#local{
-				border: 1px solid white;
-				border-radius: 30px;
-				padding: 5px;
-			}
-
-			h3{
-				font-size: 1em;
-			}
-
-			h3 #orange{
-				color: #D2ab67;
-			}
-
-			#sobre{
-				display: flex;
-				justify-content: center;
-				gap: 70px;
-				align-items: center; !important
-				padding: 20px 0;
-				border-width: 5px 0; 
-				border-style: solid;
-				border-color: #D2ab67;
-				background-color: #03101d; 
-				flex-wrap: wrap; !important
-			}
 
 			#compromisso{
 				display: flex;
-				justify-content: center;
-				gap: 10px;
-				align-items: center; !important
-				border-width: 5px 0; 
-				border-style: solid;
-				border-color: #1a1a1a;
-				background-color: #111111;
-				flex-wrap: wrap; !important
-			}
-
-			#conteudoCompromisso{
-				padding: 100px 50px 0px 50px;
-				max-width: 600px;
-				width: 100%;
-			}
-
-			#conteudoCompromisso p{
-				text-align: start;
-			}
-
-			#conteudoSobre{
-				max-width: 400px;
-				width: 100%;
-				display: inline-block;
-				text-align: start;
+				flex-wrap: wrap;
+				gap: 30px;
+				justify-content: space-around;
+				align-items: center;
+				padding-bottom: 30px;
 			}
 
 			#luz{
+				max-width: 300px;
+				width: 100%;
+				box-shadow: -10px 16px #D2ab67;
+			}
+
+			#nosso{
+				
+				width: 100%;
+			}
+
+			#dourado{
+				background-color: #D2ab67;
+				color: white;
+				font-weight: bold;
+				padding: 3px;
+			}
+
+			#azul{
+				background-color: #09041a;
+				color: white;
+				font-weight: bold;
+				padding: 3px;
+			}
+
+			#cadeira{
 				max-width: 450px;
 				width: 100%;
-				box-shadow: -30px 16px #D2ab67;
-				
+				box-shadow: -10px 16px #D2ab67;
 			}
 
-			#conheca{
-				font-size: 1.5em;
+			#captacao{
+				box-shadow: inset black;
+				padding: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 100px;
+				flex-wrap: wrap;
+				box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.41);
 			}
 
-			#Comp{
-				font-size: 1.5em;
+			#entrecon{
+				width: 400px;
+			}
+
+			#form{
+				width: 500px;
+			}
+
+			#informacoes{
+				display: flex;
+				flex-direction: column;
+				gap: 40px;
+			}
+			
+			#enviar{
+				width: 150px;
+			}
+
+			#tel{
+				background-color: rgba(144, 144, 144, 0.25);
+				border-radius: 3px;
+				border: none;
+				color: inherit;
+				display: block;
+				outline: 0;
+				padding: 0 1em;
+				text-decoration: none;
+				width: 100%;
+				height: 2.75em;
 			}
 
 			.pessoas{
 				background-color: #D2ab67;
-				color: #03101d;
+				color: black;
 				font-weight: bold;
 			}
-
-			#estatua{
-				width: 100%;
-			}
-
-			#areaT{
-				color: #D2AB67;
-				padding: 30px;
-				font-size: 2em;
-				text-align: center;
-			}
-		</style>
+        </style>
 	</head>
-	<body class="landing is-preload">
+	<body class="is-preload">
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
 				<!-- Header -->
-				
-
-				<!-- Banner -->
-					<section id="banner">
-					</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-						<div class="inner">
-							<h2>Bergamaschi Advogados</h2>
-						</div>
-					</section>
-
 					<header id="header">
 						<h1><a href="index.html">ROBSON BERGAMASCHI</a></h1>
 						<nav id="nav">
@@ -259,6 +201,7 @@
 											<li><a href="#">Sobre Nós</a></li>
 											<li><a href="#">Blog</a></li>
 											<li><a href="#">Contato</a></li>
+											
 											<li></li>
 										</ul>
 									</div>
@@ -267,183 +210,138 @@
 						</nav>
 					</header>
 
+				<!-- Main -->
 
-					<section id="sobre" class="wrapper style1 special">
+				<article id="main">
+					<header>
+						<h2>Nossa Historia</h2>
+						<p>Tradição, Seriedade e Comprometimento <br> desde <span id="orange">1977</span></p>
+					</header>
+					<section class="wrapper style5">
+						<div class="inner">
+							<div id="compromisso">
+								<div id="nosso">
 
-							<article>
-								<img src="images/WhatsApp-Image-2024-02-12-at-11.20.png" alt="" id="luz">
-							</article>
+									<h3>O inicio</h3>
+									<p>
 
-							<article id="conteudoSobre">
+										Há décadas, Bergamaschi Advogados tem sido referência em compromisso jurídico, começando em 1977 com o visionário Dr. Odemil Pineda Bergamaschi e sua esposa, Dalva Rodrigues de Paula Bergamaschi. Hoje, seu legado é continuado com dedicação por seu filho, id="dourado">Robson Luis de Paula Bergamaschi, que implementou uma nova estrutura para aprimorar ainda mais a qualidade do atendimento aos nossos clientes.
+										
+									</p>
 
-								<h1 id="conheca">Conheça a gente</h1>
+								</div>
 
 								<p>
-									Fundado em 1977 pelo saudoso <span class="pessoas">Dr. Odemil Pineda Bergamaschi</span> e sua esposa, <span class="pessoas">Dalva Rodrigues de Paula Bergamaschi</span>. <br>
-									E ao longo de décadas, tem sido sinônimo de excelência jurídica e compromisso sólido com seus clientes</p>
+									<span id="azul">Fundação com Dr. Odemil Pineda Bergamaschi:</span><span id="dourado">Iniciamos nossa jornada com um líder visionário, dedicado à defesa incansável dos direitos dos clientes.</span>
+									<br><br>
+									<span id="azul">Compromisso Perene com a Qualidade:</span><span id="dourado">O legado de Dalva Rodrigues de Paula Bergamaschi continua a inspirar nossa busca pela excelência e ética.</span> <br><br>
+									<span id="azul">Continuidade com Robson Luis de Paula Bergamaschi:</span><span id="dourado">Seu compromisso sólido e visão inovadora lideram o escritório rumo ao futuro.</span>
+								</p>
+							</div>
 
-								<a href="conheca.html">Saiba Mais</a>
-							</article>
+							<div id="compromisso">
+								<div id="nosso">
+									<h4>Nosso Compromisso:</h4>
+									<p>
+										<span style="font-weight: bold;">Tradição e Solidez:</span> Ao longo de décadas, construímos uma reputação sólida baseada em valores fundamentais de integridade e dedicação.
+										<br> <br>
+										<span style="font-weight: bold;">Inovação para Melhor Atendimento:</span> Sob a liderança de Robson Luis de Paula Bergamaschi, implementamos uma nova estrutura para oferecer serviços ainda mais eficientes e adaptados às necessidades de nossos clientes.
+									</p>
+								</div>
 
+								
+							</div>
+						</div>
 					</section>
 
-					<section id="areaDA">
+					<section style="background-color: #03101d; color: white;" class="wrapper style5">
+						<div id="cont">
+							<div id="texto">
+								<h3 style="color: white;">Bem-Vindo!</h3>
+								<p>
+									Bem-vindo ao nosso escritório de advocacia, onde a excelência e a dedicação são prioridades. Com uma equipe experiente e comprometida, oferecemos soluções jurídicas personalizadas para nossos clientes. Nossa reputação é construída na ética, inovação e defesa incansável dos interesses de quem confia em nós. Estamos aqui para você, garantindo resultados eficazes e apoio em cada etapa do processo legal.
+								</p>
+
+								<a href="index.html" id="voltar">Voltar</a>
+							</div>
+
+							<main class="main">
+
+								<section class="galery">
+									<div class="fotos">
+										<img src="./img/foto01.png" alt="Foto 1">
+										<img src="./img/foto02.png" alt="Foto 2">
+										<img src="./img/foto03.png" alt="Foto 3">
+										<img src="./img/foto04.png" alt="Foto 4">
+										<img src="./img/foto05.png" alt="Foto 5">
+										<img src="./img/foto06.png" alt="Foto 6">
+										<img src="./img/foto07.png" alt="Foto 7">
+										<img src="./img/foto08.png" alt="Foto 8">
+										<img src="./img/foto09.png" alt="Foto 9">
+										<img src="./img/foto010.png" alt="Foto 10">
+									</div>
+								</section>
 					
-					<h1 id="areaT">Áreas de Atuação </h1>
+							</main>
 
-						<nav id="atuacao">
+
+						</div>
+					</section>
+
+					
+
+				</article>
+
+				<section id="captacao">
+						
+					<div id="entrecon">
+						<h1>Estasmos esperando você!</h1>
+
+						<p>Confie em <span class="pessoas">Bergamaschi Advogados para representação jurídica de qualidade</span>, marcada por tradição, solidez e inovação. Entre em contato conosco e descubra como podemos atender às suas necessidades com excelência.</p>
+						
+					
+					</div>
+
+					<div id="form">
+
+						<h1>Cadastre-se</h1>
+						
+						<form action="/submit_form.php" method="post" id="informacoes">
 							
-							<section id="cartao">
-								<img src="images/direito-previdenciario-icon-150x150.png.png" alt="">
-								<h1>Direito <br> Previdenciário
-								</h1>
-								<a href="previdenciario.html" id="saibamais">Saiba mais</a>
-							</section>
+							<div>
+								<input type="text" id="nome" name="nome" placeholder="nome" required>
+							</div>
 
-							<section id="cartao">
-								<img src="images/direito-do-trabalho-icon.png" alt="">
-								<h1>Direito do <br> Traballho
-								</h1>
-								<a href="trabalhista.html" id="saibamais">Saiba mais</a>
-							</section>
+							<div>
+								<input type="email" id="email" name="email" placeholder="E-mail" required>
+							</div>
 
-							<section id="cartao">
-								<img src="images/direito-civil-icon-150x150.png.png" alt="">
-								<h1>Direito <br> Civil
-								</h1>
-								<a href="civil.html" id="saibamais">Saiba mais</a>
-							</section>
+							<div>
+								<input id="tel" type="tel" id="telefone" placeholder="Tel" name="telefone" required>
+							</div>
 
-							<section id="cartao">
-								<img src="images/leis-corporativas-1.png" alt="">
-								<h1>Direito <br> Empresarial
-								</h1>
-								<a href="empresarial.html" id="saibamais">Saiba mais</a>
-							</section>
-
-							<section id="cartao">
-								<img src="images/juridico-1-150x150.png.png" alt="">
-								<h1>Direito Tributário
-								</h1>
-								<a href="tributario.html" id="saibamais">Saiba mais</a>
-							</section>
-					</nav>
-				</div>
-
-					</nav>
+							<input type="submit" value="Enviar" id="enviar">
+						</form>
+					</div>
 
 				</section>
 
-				</div>
-			</center>
-				<!-- Two -->
-					<section id="two" class="wrapper alt style2">
-					
-						<section class="spotlight">
-							<div id="douradao"></div>
-						
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/man-making-his-move.jpg" alt="" /></div><div class="content">
-								<h2>Valores <br />
-								</h2>
-								<p>Excelência: Compromisso em prestar serviços com eficiência e qualidade, superando as expectativas de cada cliente.</br></br>
-									Integridade e Ética: Atuar de forma íntegra e ética na condução dos negócios e nas relações com colaboradores e clientes.</br></br>
-									Respeito: Interagir com respeito nas relações pessoais e profissionais.
-								</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/2151023417.jpg" style=""/></div><div class="content">
-								<h2>Missão <br />
-								</h2>
-								<p>Nossa missão é garantir a justiça e a proteção dos seus direitos. Conte com nosso escritório de 
-									advocacia para representá-locom dedicação e profissionalismo. Nossa reputação é construída em resultados positivos e clientes satisfeitos.
-								</p>
-							</div>
-						</section>
-						<div id="douradao"></div>
-					</section>
-
-					<section id="compromisso">
-
-						<article id="conteudoCompromisso">
-
-							<h1 id="Comp">Nosso Compromisso</h1>
-
-							<p>
-								<span class="pessoas">Tradição e Solidez:</span> Ao longo de décadas, construímos uma reputação sólida baseada em valores fundamentais de integridade e dedicação. <br> <br>
-								<span class="pessoas">Inovação para Melhor Atendimento:</span> Sob a liderança de Robson Luis de Paula Bergamaschi, implementamos uma nova estrutura para oferecer serviços ainda mais eficientes e adaptados às necessidades de nossos clientes.
-							</p>
-
-						</article>
-
-						<article>
-							<img src="images/estatua.png" alt="" id="estatua">
-						</article>
-
-				</section>
-				
-					<footer id="rodape">
-						
-						<section id="atendi">
-							<img src="images/ícone.png" alt="" id="logo">
-
-							<h1>Atendimento</h1>
-							<ul>
-								<li><i class="fa-solid fa-phone" style="color: #ffffff;"></i> (00) 0000-0000</li>
-								<li><i class="fa-solid fa-phone" style="color: #ffffff;"></i> (00) 0000-0000</li>
-								<li><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i> (00) 00000-0000</li>
-								<li><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> contato@robson.com</li>
-								<li><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> R. Nossa Sra. de Fátima, 1704</li>
-							</ul>
-							
-						</section>
-					
-						<section id="mpsite">
-							
-							<h1>Mapa do site</h1>
-							<ul>
-								<li><a href="#">Home</a></li>
-								<li><a href="#">Área de Atuação</a></li>
-								<li><a href="#">Sobre nós</a></li>
-								<li><a href="#">Contato</a></li>
-								<li><a href="#">Blog</a></li>
-							</ul>
-
-						</section>
-						
-						
-
-						<section id="mpsite">
-							
-							<h1>Áreas de <br> atuação</h1>
-							<ul>
-								<li><a href="#">Direito Previdenciário</a></li>
-								<li><a href="#">Direito do Traballho</a></li>
-								<li><a href="#">Direito Civil</a></li>
-								<li><a href="#">Direito Empresarial</a></li>
-								<li><a href="#">Direito Tributario</a></li>
-							</ul>
-
-						</section>
-
-						
-
-						<section id="mapa">
-							<h1>Venha nos conhecer</h1>
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.7173743551216!2d-49.82897272536889!3d-23.68606306618412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c1e8c2f92e99df%3A0x268c0bf80025f4dc!2sR.%20Nossa%20Sra.%20de%20F%C3%A1tima%2C%201704%2C%20Siqueira%20Campos%20-%20PR%2C%2084940-000!5e0!3m2!1spt-PT!2sbr!4v1707838414340!5m2!1spt-PT!2sbr" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-						</section>
+				<!-- Footer -->
+				<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-whatsapp"><span class="label">whatsapp</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
 						
 					</footer>
 
-					<div id="copy">
-						<p>Rorbson Bergamaschi © - 2024 - Todos os Direitos reservados</p>
-					</div>
 
-			
-					
-				
+				<div id="copy">
+					<p>Rorbson Bergamaschi © - 2024 - Todos os Direitos reservados</p>
+				</div>
+
 			</div>
 
 		<!-- Scripts -->
