@@ -1,16 +1,186 @@
 <!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<html lang="pt-BR">
 	<head>
-		<title>Generic - Spectral by HTML5 UP</title>
+		<title>ROBSON BERGAMASCHI</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="./css/reset.min.css">
+		<link rel="stylesheet" href="./css/default.css">
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/animation.css">
+        <style>
+
+			li{
+				list-style: none;
+			}
+
+			ul{
+				padding-left: 0;
+			}
+
+            #cont{
+                display: flex;
+                flex-wrap: wrap-reverse;
+                gap: 30px;
+                justify-content: space-evenly;
+				align-items: center;
+                padding: 1em;
+            }
+
+            #cont #texto{
+                width: 500px;
+            }
+
+            #voltar{
+                background-color: #D2ab67;
+                padding: 10px 40px;
+                color: white;
+                text-decoration: none;
+                border-radius: 50px;
+            }
+
+            #voltar:hover{
+                filter: opacity(70%);
+            }
+
+			#rodape{
+				padding: 80px 50px 20px 50px;
+				gap: 50px;
+				background-color: #03101d;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				flex-wrap: wrap;
+			}
+
+			#mapa iframe{
+				border-radius: 25px;
+				padding-top: 10px;
+			}
+
+			#rodape li{
+				font-size: .7em;
+				margin-left: 0;
+			}
+
+			#mpsite li{
+				line-height: 3.3em;
+			}
+
+			#mpsite li:hover{
+				color: #D2ab67;
+			}
+
+			#atendi img#logo{
+				width: 100px;
+				padding-bottom: 40px;
+			}
+
+			#mapa h1{
+				font-size: 1em;
+			}
+
+			#copy{
+				background-color: #03101d;
+				text-align: center;
+				font-size: .6em;
+				padding: 5px;
+			}
+
+			i{
+				margin-right: 5px;
+			}
+
+			#compromisso{
+				display: flex;
+				flex-wrap: wrap;
+				gap: 30px;
+				justify-content: space-around;
+				align-items: center;
+				padding-bottom: 30px;
+			}
+
+			#luz{
+				max-width: 300px;
+				width: 100%;
+				box-shadow: -10px 16px #D2ab67;
+			}
+
+			#nosso{
+				max-width: 500px;
+				width: 100%;
+			}
+
+			#dourado{
+				background-color: #D2ab67;
+				color: white;
+				font-weight: bold;
+				padding: 3px;
+			}
+
+			#azul{
+				background-color: #09041a;
+				color: white;
+				font-weight: bold;
+				padding: 3px;
+			}
+
+			#cadeira{
+				max-width: 450px;
+				width: 100%;
+				box-shadow: -10px 16px #D2ab67;
+			}
+
+			#captacao{
+				box-shadow: inset black;
+				padding: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 100px;
+				flex-wrap: wrap;
+				box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.41);
+			}
+
+			#entrecon{
+				width: 400px;
+			}
+
+			#form{
+				width: 500px;
+			}
+
+			#informacoes{
+				display: flex;
+				flex-direction: column;
+				gap: 40px;
+			}
+			
+			#enviar{
+				width: 150px;
+			}
+
+			#tel{
+				background-color: rgba(144, 144, 144, 0.25);
+				border-radius: 3px;
+				border: none;
+				color: inherit;
+				display: block;
+				outline: 0;
+				padding: 0 1em;
+				text-decoration: none;
+				width: 100%;
+				height: 2.75em;
+			}
+
+			.pessoas{
+				background-color: #D2ab67;
+				color: black;
+				font-weight: bold;
+			}
+        </style>
 	</head>
 	<body class="is-preload">
 
@@ -19,7 +189,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="index.html">Spectral</a></h1>
+						<h1><a href="index.html">ROBSON BERGAMASCHI</a></h1>
 						<nav id="nav">
 							<ul>
 								<li class="special">
@@ -27,10 +197,12 @@
 									<div id="menu">
 										<ul>
 											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Generic</a></li>
-											<li><a href="elements.html">Elements</a></li>
-											<li><a href="#">Sign Up</a></li>
-											<li><a href="#">Log In</a></li>
+											<li><a href="#">Áreas de Atuação</a></li>
+											<li><a href="#">Sobre Nós</a></li>
+											<li><a href="#">Blog</a></li>
+											<li><a href="#">Contato</a></li>
+											
+											<li></li>
 										</ul>
 									</div>
 								</li>
@@ -39,52 +211,138 @@
 					</header>
 
 				<!-- Main -->
-					<article id="main">
-						<header>
-							<h2>Nossa Historia</h2>
-							<p>Tradição, Seriedade e Comprometimento <br> desde <span id="orange">1977</span></p>
-						</header>
-						<section class="wrapper style5">
-							<div class="inner">
 
-								<h3>O inicio</h3>
-								<p>
+				<article id="main">
+					<header>
+						<h2>Nossa Historia</h2>
+						<p>Tradição, Seriedade e Comprometimento <br> desde <span id="orange">1977</span></p>
+					</header>
+					<section class="wrapper style5">
+						<div class="inner">
+							<div id="compromisso">
+								<img src="images/WhatsApp Image 2024-02-12 at 11.19.41.jpeg" alt="" id="cadeira">
+								<div id="nosso">
 
-									Há décadas, Bergamaschi Advogados tem sido referência em compromisso jurídico, começando em 1977 com o visionário Dr. Odemil Pineda Bergamaschi e sua esposa, Dalva Rodrigues de Paula Bergamaschi (in memoriam). Hoje, seu legado é continuado com dedicação por seu filho, Robson Luis de Paula Bergamaschi, que implementou uma nova estrutura para aprimorar ainda mais a qualidade do atendimento aos nossos clientes.
+									<h3>O inicio</h3>
+									<p>
+
+										Há décadas, <span id="dourado">Bergamaschi Advogados</span> tem sido referência em compromisso jurídico, começando em 1977 com o visionário <span id="dourado">Dr. Odemil Pineda Bergamaschi e sua esposa, Dalva Rodrigues de Paula Bergamaschi</span> (in memoriam). Hoje, seu legado é continuado com dedicação por seu filho, <span id="dourado">Robson Luis de Paula Bergamaschi</span>, que implementou uma nova estrutura para aprimorar ainda mais a qualidade do atendimento aos nossos clientes.
+										
+									</p>
+
+									<p>
+										<span id="azul">Fundação com Dr. Odemil Pineda Bergamaschi:</span> Iniciamos nossa jornada com um líder visionário, dedicado à defesa incansável dos direitos dos clientes.
+										<br><br>
+										<span id="azul">Compromisso Perene com a Qualidade:</span> O legado de Dalva Rodrigues de Paula Bergamaschi continua a inspirar nossa busca pela excelência e ética. <br><br>
+										<span id="azul">Continuidade com Robson Luis de Paula Bergamaschi:</span> Seu compromisso sólido e visão inovadora lideram o escritório rumo ao futuro.
+									</p>
+
 									
-								</p>
-
-								<p>
-									Fundação com Dr. Odemil Pineda Bergamaschi: Iniciamos nossa jornada com um líder visionário, dedicado à defesa incansável dos direitos dos clientes.
-									Compromisso Perene com a Qualidade: O legado de Dalva Rodrigues de Paula Bergamaschi continua a inspirar nossa busca pela excelência e ética.
-									Continuidade com Robson Luis de Paula Bergamaschi: Seu compromisso sólido e visão inovadora lideram o escritório rumo ao futuro.
-								</p>
-								<hr />
-
-								<h4>Nosso Compromisso:</h4>
-								<p>
-									Tradição e Solidez: Ao longo de décadas, construímos uma reputação sólida baseada em valores fundamentais de integridade e dedicação.
-									<br>
-									Inovação para Melhor Atendimento: Sob a liderança de Robson Luis de Paula Bergamaschi, implementamos uma nova estrutura para oferecer serviços ainda mais eficientes e adaptados às necessidades de nossos clientes.
-								</p>
-
+								</div>
 							</div>
-						</section>
-					</article>
+
+							<div id="compromisso">
+								<div id="nosso">
+									<h4>Nosso Compromisso:</h4>
+									<p>
+										<span id="dourado">Tradição e Solidez:</span> Ao longo de décadas, construímos uma reputação sólida baseada em valores fundamentais de integridade e dedicação.
+										<br> <br>
+										<span id="dourado">Inovação para Melhor Atendimento:</span> Sob a liderança de Robson Luis de Paula Bergamaschi, implementamos uma nova estrutura para oferecer serviços ainda mais eficientes e adaptados às necessidades de nossos clientes.
+									</p>
+								</div>
+
+								<img src="images/WhatsApp Image 2024-02-12 at 11.20.23.jpeg" alt="" id="luz">
+							</div>
+						</div>
+					</section>
+
+					<section style="background-color: #03101d; color: white;" class="wrapper style5">
+						<div id="cont">
+							<div id="texto">
+								<h3 style="color: white;">Bem-Vindo!</h3>
+								<p>
+									Bem-vindo ao nosso escritório de advocacia, onde a excelência e a dedicação são prioridades. Com uma equipe experiente e comprometida, oferecemos soluções jurídicas personalizadas para nossos clientes. Nossa reputação é construída na ética, inovação e defesa incansável dos interesses de quem confia em nós. Estamos aqui para você, garantindo resultados eficazes e apoio em cada etapa do processo legal.
+								</p>
+
+								<a href="index.html" id="voltar">Voltar</a>
+							</div>
+
+							<main class="main">
+
+								<section class="galery">
+									<div class="fotos">
+										<img src="./img/foto01.png" alt="Foto 1">
+										<img src="./img/foto02.png" alt="Foto 2">
+										<img src="./img/foto03.png" alt="Foto 3">
+										<img src="./img/foto04.png" alt="Foto 4">
+										<img src="./img/foto05.png" alt="Foto 5">
+										<img src="./img/foto06.png" alt="Foto 6">
+										<img src="./img/foto07.png" alt="Foto 7">
+										<img src="./img/foto08.png" alt="Foto 8">
+										<img src="./img/foto09.png" alt="Foto 9">
+										<img src="./img/foto010.png" alt="Foto 10">
+									</div>
+								</section>
+					
+							</main>
+
+
+						</div>
+					</section>
+
+					
+
+				</article>
+
+				<section id="captacao">
+						
+					<div id="entrecon">
+						<h1>Estasmos esperando você!</h1>
+
+						<p>Confie em <span class="pessoas">Bergamaschi Advogados para representação jurídica de qualidade</span>, marcada por tradição, solidez e inovação. Entre em contato conosco e descubra como podemos atender às suas necessidades com excelência.</p>
+						
+					
+					</div>
+
+					<div id="form">
+
+						<h1>Cadastre-se</h1>
+						
+						<form action="/submit_form.php" method="post" id="informacoes">
+							
+							<div>
+								<input type="text" id="nome" name="nome" placeholder="nome" required>
+							</div>
+
+							<div>
+								<input type="email" id="email" name="email" placeholder="E-mail" required>
+							</div>
+
+							<div>
+								<input id="tel" type="tel" id="telefone" placeholder="Tel" name="telefone" required>
+							</div>
+
+							<input type="submit" value="Enviar" id="enviar">
+						</form>
+					</div>
+
+				</section>
 
 				<!-- Footer -->
-					<footer id="footer">
+				<footer id="footer">
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-whatsapp"><span class="label">whatsapp</span></a></li>
 							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
 							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
-						<ul class="copyright">
-							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
+						
 					</footer>
+
+
+				<div id="copy">
+					<p>Rorbson Bergamaschi © - 2024 - Todos os Direitos reservados</p>
+				</div>
 
 			</div>
 
@@ -96,6 +354,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://kit.fontawesome.com/821de4c13f.js" crossorigin="anonymous"></script>
 
 	</body>
 </html>
