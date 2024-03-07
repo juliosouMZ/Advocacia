@@ -1,5 +1,6 @@
 .galery {
-    width: 640px;
+    width: 100%;
+    max-width: 650px;
     height: 360px;
     background-color: black;
     overflow: hidden;
@@ -15,3 +16,9 @@
 .galery .fotos img {
     width: 19.9%;
 }
+
+@media screen and (max-width: 500px) {
+    .galery {
+      height: 150px;
+    }
+  }
