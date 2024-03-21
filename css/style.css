@@ -9,7 +9,7 @@
 .galery .fotos {
     width: 500%;
     animation-name: animacao;
-    animation-duration: 20s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
 }
 
